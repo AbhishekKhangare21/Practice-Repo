@@ -1,14 +1,9 @@
-function x() {
-  var a = 7;
-  function y() {
-    console.log(a);
+const radius = [3, 1, 2, 4];
+
+const calculateArea = function (radius) {
+  const output = [];
+  for (let i = 0; i < radius.length; i++) {
+    output.push(Math.PI * radius[i] * radius[i]);
   }
-  return y;
-}
-
-// var z = x();
-// console.log(z);
-
-// z();
-
-console.log(x);
+  return output;
+};
