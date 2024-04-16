@@ -1,12 +1,9 @@
-var n = 2;
-
-function square(num) {
-  var ans = num * num;
-  return ans;
+var a = 100;
+{
+  var a = 10;
+  let b = 20;
+  const c = 30;
+  console.log(a);
+  console.log(b);
+  console.log(c);
 }
-
-var square2 = square(n);
-var square4 = square(4);
-
-console.log(square2);
-console.log(square4);
