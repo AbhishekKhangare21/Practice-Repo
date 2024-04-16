@@ -1,9 +1,12 @@
-const radius = [3, 1, 2, 4];
+var n = 2;
 
-const calculateArea = function (radius) {
-  const output = [];
-  for (let i = 0; i < radius.length; i++) {
-    output.push(Math.PI * radius[i] * radius[i]);
-  }
-  return output;
-};
+function square(num) {
+  var ans = num * num;
+  return ans;
+}
+
+var square2 = square(n);
+var square4 = square(4);
+
+console.log(square2);
+console.log(square4);
