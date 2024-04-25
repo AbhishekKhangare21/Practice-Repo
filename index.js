@@ -1,5 +1,9 @@
-var a = [10, 20, 30, 40];
+console.time("codeStart");
 
-for (var i = 0; i < a.length; i++) {
-  console.log(a[i]);
+let num = 4;
+
+for (var fact = 1; num > 1; num--) {
+  fact = fact * num;
 }
+console.log(fact);
+console.timeEnd("codeStart");
