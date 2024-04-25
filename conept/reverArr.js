@@ -1,4 +1,4 @@
-var a = [10, 34, 56, 78];
+let a = [10, 34, 56, 78];
 
 // console.log(a.length);
 // console.log(a.reverse());
