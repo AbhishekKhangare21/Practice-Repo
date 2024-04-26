@@ -6,7 +6,7 @@ let b = 20;
 // a = b;
 // b = temp;
 
-a = b - a;
-b = a;
-a = a + a;
-console.log(a, b);
+// a = b - a;
+// b = a;
+// a = a + a;
+// console.log(a, b);
