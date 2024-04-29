@@ -1,11 +1,13 @@
-setTimeout(() => {
-  console.log("String1");
-}, "1000");
+//Find below code output with reason
 
-setTimeout(() => {
-  console.log("String2");
-}, "1 second");
+var a = 5;
 
-setTimeout(() => {
-  console.log("Number");
-}, 1000);
+const x = (a) => console.log(a);
+console.log(a);
+
+const y = function (b) {
+  console.log(b);
+};
+
+x(1);
+y(3);

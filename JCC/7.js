@@ -1,11 +1,8 @@
-function print(x) {
-  if (x <= 1) {
-    print(x + 1);
-    console.log("x in if block is " + x);
-  } else if (x >= 1000000000000) {
-    console.log("x in else if block is" + x);
-  }
-  print(x + 1);
-}
+const strFrom = Array.from("testfrom");
+console.log(strFrom);
 
-print(0);
+const arrFrom = Array.from([1, 2, 3], (x) => x + x);
+console.log(arrFrom);
+
+const result = Array.from({ length: 10 }, (v, i) => i);
+console.log(result);

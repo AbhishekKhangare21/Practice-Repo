@@ -1,11 +1,9 @@
-//Question: Choose the on Object Is Method that returns false
+const obj = Object.create(
+  { subject: "javascript" },
+  { lesson: { value: "Object Assign" } }
+);
 
-Object.is(NaN, NaN);
+console.log(obj);
 
-Object.is("Test", "Test");
-
-Object.is({ a: 1 }, { a: 1 });
-
-const res = Object.is(undefined, undefined);
-
-console.log(res);
+const copy = Object.assign({}, obj);
+console.log(copy);

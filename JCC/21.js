@@ -1,11 +1,9 @@
-//Question: Find Code Output (with reason)
+const mapData = new Map();
+mapData["name"] = "Test";
+mapData.set("subject", "Javascript");
+mapData.set("subject2", "React");
 
-let str = "123";
-
-let result1 = str.repeat(0);
-let result2 = str.repeat(3.5);
-
-console.log((result1 + result2).length);
-
-console.log(result1);
-// repeat -> 0 and Infinity
+console.log(mapData);
+console.log(mapData.has("name"));
+console.log(mapData.has("subject"));
+console.log(mapData.size);

@@ -1,21 +1,11 @@
-//Question: Generate Random AlphaNumeric Captcha Using Javascript
+//Question: Find Code Output (with reason)
 
-function generateRandom() {
-  const chars =
-    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+let str = "123";
 
-  let strLength = 7;
+let result1 = str.repeat(0);
+let result2 = str.repeat(3.5);
 
-  let result = "";
+console.log((result1 + result2).length);
 
-  for (i = 0; i < strLength; i++) {
-    let randNum = Math.floor(Math.random() * chars.length);
-
-    result = result + chars.substring(randNum, randNum + 1);
-  }
-
-  return result;
-  //   document.getElementById("randomChar").innerHTML = result;
-}
-
-console.log(generateRandom());
+console.log(result1);
+// repeat -> 0 and Infinity

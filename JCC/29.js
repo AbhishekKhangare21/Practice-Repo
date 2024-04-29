@@ -1,13 +1,23 @@
-//Find below code output with reason
+// Find Below Code Output
 
-var a = 5;
+function A() {
+  console.log("A");
+  return false;
+}
 
-const x = (a) => console.log(a);
-console.log(a);
+function B() {
+  console.log("B");
+  return true;
+}
 
-const y = function (b) {
-  console.log(b);
-};
+function C() {
+  console.log("C");
+  return 5;
+}
 
-x(1);
-y(3);
+function D() {
+  console.log("D");
+  return 2;
+}
+
+// console.log(C() > D() && (undefined || B() || A()));

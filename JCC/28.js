@@ -1,23 +1,13 @@
-// Find Below Code Output
+// Question: Find the output of below code (with reason)
 
-function A() {
-  console.log("A");
-  return false;
-}
+const a = 5;
+const b = 2;
 
-function B() {
-  console.log("B");
-  return true;
-}
+// number is being coonverted to binary
+// console.log(a.toString(2)); //101
 
-function C() {
-  console.log("C");
-  return 5;
-}
+// left shift ⬅⬅
+// console.log(a << b); //10100 which meaning 20
+// console.log(parseInt(a << b)); // 20
 
-function D() {
-  console.log("D");
-  return 2;
-}
-
-// console.log(C() > D() && (undefined || B() || A()));
+// console.log(typeof (a << b));

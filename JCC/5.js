@@ -1,8 +1,5 @@
-// Question: Find Boolen Output of Below Code (with reason)
+// Question: Guess the Output with reason
 
-const falsy = new Boolean(false);
-
-if (falsy) {
-  if ([]) console.log("Array [] is empty");
-  if ([] == false) console.log("Empty [] is compared with false");
-}
+const intArray = [1, 2, 3];
+intArray[50] = 50;
+console.log(intArray.length);

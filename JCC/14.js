@@ -1,27 +1,6 @@
-// "use strict";
+const arr = [1, 2, 3, 4, 5, 3, 2];
+const result = arr.filter(function (elem) {
+  return arr.indexOf(elem) == arr.lastIndexOf(elem);
+});
 
-// const obj = {
-//   name: {},
-// };
-
-// Object.freeze(obj);
-// obj.name.firstName = "Test2";
-// console.log(obj.name.firstName);
-
-// console.log(obj);
-
-// 2nd Example
-
-// const obj1 = {
-//   subject: "javascript",
-//   rating: 9,
-// };
-
-// obj1.subject = "Angular";
-// delete obj1.rating;
-
-// console.log(obj1);
-
-// Object.freeze(obj1);
-
-// obj1.subject = "Typescript";
+console.log(result);

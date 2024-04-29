@@ -1,12 +1,10 @@
-// Find below code output
+//Find below code output
 
-const interval = setInterval(cb, 0, "first", "second");
-console.log(typeof interval);
-
-function cb(a, b) {
+const x = function (a, b = 3) {
+  console.log(arguments[0] + " " + arguments[1]);
+  arguments[0] = 4;
   console.log(a);
   console.log(b);
-  clearInterval(interval);
-}
+};
 
-console.log(typeof interval);
+x(1, 2);

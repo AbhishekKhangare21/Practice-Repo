@@ -1,21 +1,21 @@
-let place = "US";
+//Question: Generate Random AlphaNumeric Captcha Using Javascript
 
-let department = {
-  [getStudentPlace()]: "India",
-  [place + "Department"]: "English",
-  standard: 100,
-};
+function generateRandom() {
+  const chars =
+    "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-function getStudentPlace() {
-  return place;
+  let strLength = 7;
+
+  let result = "";
+
+  for (i = 0; i < strLength; i++) {
+    let randNum = Math.floor(Math.random() * chars.length);
+
+    result = result + chars.substring(randNum, randNum + 1);
+  }
+
+  return result;
+  //   document.getElementById("randomChar").innerHTML = result;
 }
 
-let division = "standard";
-
-let {
-  [getStudentPlace()]: placeDetails,
-  [place + "Department"]: departmentDetails,
-  [division]: standard,
-} = department;
-
-console.log(placeDetails + " & " + departmentDetails + " & " + standard);
+console.log(generateRandom());

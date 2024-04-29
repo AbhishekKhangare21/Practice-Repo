@@ -1,8 +1,12 @@
-const strFrom = Array.from("testfrom");
-console.log(strFrom);
+let arr = [
+  [0, 1],
+  [2, 3],
+  [4, 5],
+];
 
-const arrFrom = Array.from([1, 2, 3], (x) => x + x);
-console.log(arrFrom);
+const flattendArr = arr.reduce(
+  (prevValue, currValue) => prevValue.concat(currValue),
+  []
+);
 
-const result = Array.from({ length: 10 }, (v, i) => i);
-console.log(result);
+console.log(flattendArr);

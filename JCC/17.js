@@ -1,7 +1,7 @@
-// Question: Find the output of below code (with reason)
+delete console.log(1);
 
-const result = ["1", "2", "3"].map(parseInt);
-
-console.log(result);
-
-console.log(parseInt("3"));
+{
+  let name = "javascript";
+  delete name;
+  console.log(name);
+}

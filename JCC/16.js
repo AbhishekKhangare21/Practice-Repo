@@ -1,9 +1,4 @@
-const mapData = new Map();
-mapData["name"] = "Test";
-mapData.set("subject", "Javascript");
-mapData.set("subject2", "React");
+const arr = [1, 2, 3, 4, 5];
 
-console.log(mapData);
-console.log(mapData.has("name"));
-console.log(mapData.has("subject"));
-console.log(mapData.size);
+const result = arr.copyWithin(3, 1, -1);
+console.log(result);

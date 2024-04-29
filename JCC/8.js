@@ -1,11 +1,14 @@
-// Question: Find Code Output (with reason)
+const arr = ["white", "red", "black", "yellow"];
+console.log("????");
 
-var x = Math.floor(Math.random());
+console.log(arr);
 
-if (x > 0.5) {
-  var x = 1;
-} else {
-  var x = 2;
-}
+console.log(arr.at(0));
+console.log(arr.at(1));
+console.log(arr.at(2));
+console.log(arr.at(-1)); // last index
+console.log(arr.at(-2)); // second last index
 
-console.log(x);
+arr.push("green");
+
+console.log(arr.at(-1));

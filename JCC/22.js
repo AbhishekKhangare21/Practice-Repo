@@ -1,3 +1,8 @@
-let arr = [1, 2, , 4, , 6];
+// Question: Find Boolen Output of Below Code (with reason)
 
-console.log(arr.slice(undefined, 6));
+const falsy = new Boolean(false);
+
+if (falsy) {
+  if ([]) console.log("Array [] is empty");
+  if ([] == false) console.log("Empty [] is compared with false");
+}

@@ -1,12 +1,21 @@
-const num1 = [[1], [2]];
-const num2 = [3, [4]];
-const num3 = 5;
+let place = "US";
 
-const concatArr = num1[0].push(num3);
+let department = {
+  [getStudentPlace()]: "India",
+  [place + "Department"]: "English",
+  standard: 100,
+};
 
-console.log(num1);
-console.log(num2);
+function getStudentPlace() {
+  return place;
+}
 
-const result = num1.concat(num2);
+let division = "standard";
 
-console.log(result);
+let {
+  [getStudentPlace()]: placeDetails,
+  [place + "Department"]: departmentDetails,
+  [division]: standard,
+} = department;
+
+console.log(placeDetails + " & " + departmentDetails + " & " + standard);

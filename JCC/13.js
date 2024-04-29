@@ -1,6 +1,7 @@
 // Question: Find the output of below code (with reason)
 
-const arr = Array(2).fill({ name: "abhi" });
+const result = ["1", "2", "3"].map(parseInt);
 
-arr[1].product = "laptop";
-console.log(arr);
+console.log(result);
+
+console.log(parseInt("3"));

@@ -1,20 +1,11 @@
-//Find below code output
+setTimeout(() => {
+  console.log("String1");
+}, "1000");
 
-var a = "test";
-class Test {
-  a = "any";
-  prop() {
-    console.log(this.a);
-    return a;
-  }
-  static get prop() {
-    console.log(a);
-    return a;
-  }
-}
+setTimeout(() => {
+  console.log("String2");
+}, "1 second");
 
-const test = new Test();
-Test.prop = "bar";
-
-test.prop();
-Test.prop;
+setTimeout(() => {
+  console.log("Number");
+}, 1000);

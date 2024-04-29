@@ -1,6 +1,11 @@
-const arr = [1, 2, 3, 4, 5, 3, 2];
-const result = arr.filter(function (elem) {
-  return arr.indexOf(elem) == arr.lastIndexOf(elem);
-});
+// Question: Find Code Output (with reason)
 
-console.log(result);
+var x = Math.floor(Math.random());
+
+if (x > 0.5) {
+  var x = 1;
+} else {
+  var x = 2;
+}
+
+console.log(x);

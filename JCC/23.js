@@ -1,12 +1,9 @@
-let arr = [
-  [0, 1],
-  [2, 3],
-  [4, 5],
-];
+let Person = class {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+};
 
-const flattendArr = arr.reduce(
-  (prevValue, currValue) => prevValue.concat(currValue),
-  []
-);
-
-console.log(flattendArr);
+const person = new Person("Learn", "Javascript");
+console.log(Person.name);

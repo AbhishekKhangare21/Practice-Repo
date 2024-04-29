@@ -1,10 +1,27 @@
-let num1 = Math.sqrt(-9);
-let num2 = Math.sqrt(9);
+// "use strict";
 
-if (num1 + num2 >= 0) {
-  console.log("Positive Value");
-} else if (num1 + num2 < 0) {
-  console.log("Negative Value");
-} else {
-  console.log("Not number value");
-}
+// const obj = {
+//   name: {},
+// };
+
+// Object.freeze(obj);
+// obj.name.firstName = "Test2";
+// console.log(obj.name.firstName);
+
+// console.log(obj);
+
+// 2nd Example
+
+// const obj1 = {
+//   subject: "javascript",
+//   rating: 9,
+// };
+
+// obj1.subject = "Angular";
+// delete obj1.rating;
+
+// console.log(obj1);
+
+// Object.freeze(obj1);
+
+// obj1.subject = "Typescript";
