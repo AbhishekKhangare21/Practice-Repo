@@ -1,4 +1,4 @@
-// Question: Remove duplicates from an Array
+// Question: Remove duplicates from an Array // can you do this using filter
 const arr = [2, 3, 5, 3, 6, 8, 9, 2, 11, 5];
 //Expected Output: [2, 3, 5, 6, 8, 9, 11];
 
