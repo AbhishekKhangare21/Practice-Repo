@@ -1,13 +1,12 @@
-// Question: Find the output of below code (with reason)
+// Question: Remove duplicates from an Array
+const arr = [2, 3, 5, 3, 6, 8, 9, 2, 11, 5];
+//Expected Output: [2, 3, 5, 6, 8, 9, 11];
 
-const a = 5;
-const b = 2;
+const resultArr = [...new Set(arr)];
+console.log(resultArr);
 
-// number is being coonverted to binary
-// console.log(a.toString(2)); //101
+const strArr = ["Mike", "John", "Nancy", "Thomas", "Nancy", "Peter", "Mike"];
+// Expected Output: ["Mike", "John", "Nancy", "Thomas", "Peter"]
 
-// left shift ⬅⬅
-// console.log(a << b); //10100 which meaning 20
-// console.log(parseInt(a << b)); // 20
-
-// console.log(typeof (a << b));
+const resultStrArr = [...new Set(strArr)];
+console.log(resultStrArr);
