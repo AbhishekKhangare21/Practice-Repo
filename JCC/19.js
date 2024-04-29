@@ -1,9 +1,11 @@
-//Question: Find Code Output (With reason)
+//Question: Choose the on Object Is Method that returns false
 
-let str1 = "Learn";
-let str2 = "Javascript";
+Object.is(NaN, NaN);
 
-console.log(str1.padEnd(6) + str2.padEnd(1));
+Object.is("Test", "Test");
 
-let result = str1.padEnd(6);
-console.log(result);
+Object.is({ a: 1 }, { a: 1 });
+
+const res = Object.is(undefined, undefined);
+
+console.log(res);
