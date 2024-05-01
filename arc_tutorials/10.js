@@ -3,5 +3,7 @@
 const Ids = [23, 45, 64, 67, 23, 45, 98, 75, 69];
 
 console.log(
-  Ids.filter((elem, i, arr) => arr.indexOf(elem) === arr.lastIndexOf(elem))
+  Ids.filter(
+    (elem, i, arr) => arr.indexOf(elem) === arr.lastIndexOf(elem)
+  ).sort((a, b) => a - b)
 );
